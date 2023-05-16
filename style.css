@@ -1,0 +1,231 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    max-width: 80px;
+    max-height: 80px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    margin-right: 30px;
+    margin-top: 10px;    
+}
+
+nav > ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: no-wrap;
+}
+
+nav > ul > li {
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+    border: solid black 2px;
+    padding: 8px;
+    margin: 5px;
+    display: block;
+    font-size: 0.9rem; 
+}
+
+nav > ul > li:hover {
+    background-color:#000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+li > a {
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+.container {
+    height: 733px;
+    width: 1481px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.pizzeria {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #fff;
+    border: solid white 3px;
+    padding: 14px;
+    letter-spacing: 1px;
+
+}
+
+.title {
+    font-size: 68px;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.title, .tagline, .textbox, .text, .newsletter {
+    text-align: center;
+}
+
+.textbox {
+    margin: 5% 15% 5% 15%;
+}
+
+.text {
+    padding-top: 20px;
+    
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.mailing_list {
+    margin: 5% 15% 5% 15%;
+}
+
+.newsletter {
+    border: solid black 3px;
+    padding: 6px;
+    margin: auto;
+    max-width: 400px;
+    letter-spacing: 1px;
+    margin-top: 60px;
+}
+
+.mailing_list {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    padding: 6px;
+}
+
+.namebox, .emailbox {
+    border-top-style: none; 
+    border-right-style: none; 
+    border-left-style: none;
+    border-bottom-style: 1px solid black;
+    padding: 10px;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    border: solid black 3px;
+    padding: 8px;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 10px;
+}
+
+button:hover {
+    background-color:#000;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#container {
+    width: 100%;
+    background-color: #000;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.left_column {
+    background-color: black;
+    color: #fff;
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.left_column > ul > li {
+    list-style: none;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.right_column {
+    background-color: black;
+    color: #fff;
+    width: 45%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.right_column > ul > li {
+    list-style: none;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.cr_box {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: black;
+}
+
+.copyright {
+    color: #fff;
+    text-align: right;
+    font-size: 14px;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    border: 0;
+}
