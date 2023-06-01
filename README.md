@@ -1,4 +1,4 @@
-# Pizzeria_Homepage
+# Pizzeria Homepage
 # Description
 + I made this homepage as a personal project to further practise my HTML and CSS skills
 + I created this as a Rudy's Pizza (https://www.rudyspizza.co.uk) clone. I used their images and I borrowed some of their text. I also borrowed text from https://www.pizzapilgrims.co.uk
