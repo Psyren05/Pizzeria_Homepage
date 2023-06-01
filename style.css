@@ -1,7 +1,13 @@
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 #logo {
@@ -15,17 +21,19 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     position: absolute;
+    z-index: 1;
 
 }
 
 nav {
     height: 100%;
     width: 100%;
-    margin-right: 30px;
-    margin-top: 10px;    
+    display: flex;
+    justify-content: right;
+    align-items: center; 
 }
 
 nav > ul {
@@ -34,6 +42,7 @@ nav > ul {
     align-items: center;
     text-decoration: none;
     flex-wrap: no-wrap;
+    margin-right: 30px;
 }
 
 nav > ul > li {
@@ -59,12 +68,24 @@ li > a {
     list-style: none;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+
 .container {
-    height: 733px;
-    width: 1481px;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+    min-width: 100vw;
+    height: 100vh;
 }
 
 .pizzeria {
@@ -77,6 +98,7 @@ li > a {
     border: solid white 3px;
     padding: 14px;
     letter-spacing: 1px;
+    margin-top: 50px;
 
 }
 
@@ -187,7 +209,7 @@ button:hover {
     height: auto;
     float: left;
     margin-left: 5%;
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 .left_column > ul > li {
@@ -202,7 +224,7 @@ button:hover {
     width: 45%;
     float: right;
     margin-right: 5%;
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 .right_column > ul > li {
@@ -228,4 +250,42 @@ button:hover {
     margin-right: 20px;
     padding: 0;
     border: 0;
+}
+
+@media(max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
 }
